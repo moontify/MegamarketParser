@@ -1,0 +1,66 @@
+/* Основные настройки стиля */
+body {
+    font-family: 'Montserrat', sans-serif; /* Использование шрифта Montserrat */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111; /* Тёмный фон */
+}
+
+.container {
+    text-align: center;
+    color: #fff; /* Белый текст */
+}
+
+.section-header {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.user-info, .form-field {
+    background-color: #222; /* Немного светлее фон для элементов */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.user-info p, .form-field label {
+    font-size: 1.2em;
+}
+
+.form-field input, .form-field select, .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+.submit-btn {
+    background-color: #0078ff; /* Синяя кнопка */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.settings-link a, .users-list-button button {
+    padding: 10px 1px;
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(45deg, #9055ff, #13e2da);
+    color: white;
+    border-radius: 5px;
+}
+
+.settings-link a:hover, .users-list-button button:hover {
+    background: linear-gradient(45deg, #6b3ebe, #10b4ac);
+}
+

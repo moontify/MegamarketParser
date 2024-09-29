@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login or Register</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../static/style14.css">
+
+</head>
+
+<body>
+<div id="authScreen" class="auth-screen">
+    <div id="loginContainer">
+        <div class="ring">
+          <i style="--clr:#ff0057;"></i>
+          <i style="--clr:#78ff35;"></i>
+          <i style="--clr:#4be1ec;"></i>
+          <form id="loginForm" class="auth-form">
+            <h2>Login</h2>
+            <div class="form-input">
+              <input type="text" id="loginUsername" placeholder="Username">
+            </div>
+            <div class="form-input">
+              <input type="password" id="loginPassword" placeholder="Password">
+            </div>
+              <button type="submit" class="form-button login-button">Sing in</button>
+            <div class="switch-form">
+              <a href="#" id="showRegisterForm">Sign up</a>
+            </div>
+          </form>
+        </div>
+    </div>
+    <div id="registerContainer" style="display:none;">
+        <div class="ring">
+          <i style="--clr:#ff0057;"></i>
+          <i style="--clr:#78ff35;"></i>
+          <i style="--clr:#4be1ec;"></i>
+          <form id="registerForm" class="auth-form">
+            <h2>Register</h2>
+            <div class="form-input">
+              <input type="text" id="registerUsername" placeholder="Username">
+            </div>
+              <div class="form-input">
+              <input type="email" id="registerEmail" placeholder="Email">
+            </div>
+            <div class="form-input">
+              <input type="password" id="registerPassword" placeholder="Password">
+            </div>
+            <button type="submit" class="form-button reg-button">Sing up</button>
+            <div class="switch-form">
+              <a href="#" id="showLoginForm">Sign in</a>
+            </div>
+          </form>
+        </div>
+    </div>
+</div>
+<script src="../static/regiter.js"></script>
+</body>
+
+</html>

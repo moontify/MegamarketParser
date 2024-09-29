@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Настройка Парсера</title>
+    <link rel="stylesheet" href="../static/styleparser.css">
+</head>
+<body>
+<video id="bannedWordVideo" style="display:none;" controls>
+  <source src="../static/net.mp4" type="video/mp4">
+  Ваш браузер не поддерживает видео.
+</video>
+<div id="notification-popup"></div>
+    <div class="container">
+        <div class="section-header">Активные ссылки</div>
+        <div class="links-settings-container">
+            <div class="link-bonus-price-container">
+                <input type="text" class="input-link" placeholder="Ссылка 1">
+                <input type="number" class="input-bonus" placeholder="Бонус (%)">
+                <input type="number" class="input-price" placeholder="Мин. цена">
+                <input type="number" class="input-price" placeholder="Макс. цена">
+                <button class="delete-btn">Удалить</button>
+            </div>
+            <button class="add-link-btn">+ Добавить ссылку</button>
+        </div>
+
+        <div class="section-header">Настройки</div>
+        <div class="toggle-switch">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-text">Работать 24/7</span>
+        </div>
+        <div class="toggle-switch">
+        <label class="switch">
+            <input type="checkbox" id="add-to-table">
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-text">Добавлять в таблицу</span>
+    </div>
+    <div class="toggle-switch" style="display: none;" id="drive-upload-container">
+        <label class="switch">
+            <input type="checkbox" id="upload-to-drive">
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-text">Загружать Таблицу на Google Drive</span>
+    </div>
+
+
+        <button class="start-parser-btn">Запустить Парсер</button>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>

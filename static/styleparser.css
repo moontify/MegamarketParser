@@ -1,0 +1,400 @@
+.notification-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(45deg, #9055ff , #13e2da);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-popup.active {
+    display: flex;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.section-header {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.links-settings-container, .collection-settings, .telegram-settings {
+    margin-bottom: 20px;
+}
+
+.link-bonus-price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-link, .input-bonus, .input-price, .input-telegram-id, .input-telegram-token {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-link-btn, .start-parser-btn {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-link-btn:hover, .start-parser-btn:hover {
+    background-color: #4cae4c;
+}
+
+.delete-btn {
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+.file-upload label {
+    /* Your label styles */
+}
+
+.file-upload input[type="file"] {
+    /* Your file input styles */
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #111;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#welcomeScreen {
+    background-image: url('photo_2024-01-26_16-15-05.jpg'); /* Пример пути к изображению */
+    background-size: cover;
+    background-position: center;
+}
+
+#welcomeScreen.fadeOut {
+    animation: fadeOut 2s forwards;
+}
+#welcomeScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('photo_2024-01-26_16-15-05.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 2em;
+    z-index: 1000;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+.fadeOut {
+    animation: fadeOut 2s forwards;
+}
+
+.container {
+    width: 50%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #222222;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: color 1s, background-color 0.5s;
+    cursor: pointer;
+}
+
+
+.section-header {
+    font-size: 18px;
+    color: #FFF;
+    background: linear-gradient(45deg, #9055ff , #13e2da);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.links-container {
+    background-color: #FFF;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.input-link {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.bonus-settings, .price-settings {
+            margin-bottom: 10px;
+        }
+        .input-bonus, .input-price {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.add-link-btn {
+    background: linear-gradient(to right, #9055ff 0%, #13e2da 100%); /* Фиолетовая кнопка */
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background: linear-gradient(to right, #b23e3e 0%, #c44545 100%); /* Красная кнопка */
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.toggle-switch {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background: linear-gradient(to right, #9055ff  0%, #13e2da  100%); /* Темно-фиолетовый фон при активации */
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #9055ff;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.toggle-text {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.start-parser-btn {
+    background: linear-gradient(to right, #9055ff  0%, #13e2da  100%); /* Темно-фиолетовая кнопка */
+    color: #FFF;
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.start-parser-btn:hover {
+    background-color: #5cb85c; /* При наведении делаем чуть светлее */
+}
+
+.user-info-section, .form-section {
+    background: #1e1f22;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.user-info p {
+    margin: 10px 0;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field input[type="email"], .form-field input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #8ed19d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #5cb85c;
+}
+/* Общие стили для экрана аутентификации */
+
+.auth-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px; /* Максимальная ширина для удобства чтения на больших экранах */
+    margin-bottom: 20px; /* Отступ между формами */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.settings-link {
+    margin-bottom: 20px; /* Добавляет отступ снизу для верхнего div */
+}
+
+.users-list-button{
+    margin-top: 10px;
+}
+/* Или если вы хотите добавить отступ сверху ко второму div */
+.code-button {
+    margin-top: 20px;
+}
+
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button {
+    background-color: #4CAF50;
+}
+
+.register-button {
+    background-color: #4CAF50;
+}
+
+.form-button:hover {
+    opacity: 0.9;
+}
+

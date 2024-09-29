@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Парсер Настроек</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section-header">Активные ссылки</div>
+        <div class="links-container">
+            <input type="text" class="input-link" placeholder="Ссылка 1">
+            <input type="text" class="input-link" placeholder="Ссылка 2">
+            <button class="add-link-btn">+ Добавить ссылку</button>
+            <button class="delete-btn">Удалить</button>
+        </div>
+
+        <div class="section-header">Настройки</div>
+        <div class="toggle-switch">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-text">Работать 24/7</span>
+        </div>
+        <div class="toggle-switch">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-text">Добавлять в таблицу</span>
+        </div>
+
+        <!-- Новый раздел для настройки бонусов -->
+        <div class="section-header">Бонусы</div>
+        <div class="bonus-settings">
+            <input type="number" class="input-bonus" placeholder="Бонус (число)">
+        </div>
+
+        <!-- Новый раздел для настройки минимальной и максимальной цены -->
+        <div class="section-header">Цены</div>
+        <div class="price-settings">
+            <input type="number" class="input-price" placeholder="Мин. цена">
+            <input type="number" class="input-price" placeholder="Макс. цена">
+        </div>
+
+        <button class="start-parser-btn">Запустить Парсер</button>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div id="authScreen" class="auth-screen">
+    <div id="loginContainer">
+        <!-- Форма входа -->
+        <form id="loginForm" class="auth-form">
+            <h2 class="form-title">Вход</h2>
+            <div class="input-group">
+                <input type="text" id="loginUsername" placeholder="Логин" class="form-input">
+            </div>
+            <div class="input-group">
+                <input type="password" id="loginPassword" placeholder="Пароль" class="form-input">
+            </div>
+            <button type="submit" class="form-button login-button">Войти</button>
+            <p class="switch-form">Еще не зарегистрированы? <a href="#" id="showRegisterForm">Регистрация</a></p>
+        </form>
+    </div>
+
+    <div id="registerContainer" style="display:none;">
+        <!-- Форма регистрации -->
+        <form id="registerForm" class="auth-form">
+            <h2 class="form-title">Регистрация</h2>
+            <div class="input-group">
+                <input type="text" id="registerUsername" placeholder="Логин" class="form-input">
+            </div>
+            <div class="input-group">
+                <input type="email" id="registerEmail" placeholder="Email" class="form-input">
+            </div>
+            <div class="input-group">
+                <input type="password" id="registerPassword" placeholder="Пароль" class="form-input">
+            </div>
+            <button type="submit" class="form-button register-button">Регистрация</button>
+            <p class="switch-form">Уже зарегистрированы? <a href="#" id="showLoginForm">Вход</a></p>
+        </form>
+    </div>
+</div>
+
+<script src="../static/regiter.js"></script>
+</body>
+</html>

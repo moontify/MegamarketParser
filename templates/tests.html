@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login or Register</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../static/style14.css">
+
+</head>
+
+<body>
+<div id="authScreen" class="auth-screen">
+    <div id="loginContainer">
+        <div class="ring">
+          <i style="--clr:#0ad911;"></i>
+          <i style="--clr:#ff0057;"></i>
+          <i style="--clr:#ffffff;"></i>
+          <div class="auth-form">
+            <h2>Login</h2>
+            <div class="form-input">
+              <input type="text" placeholder="Username">
+            </div>
+            <div class="form-input">
+              <input type="password" placeholder="Password">
+            </div>
+              <button type="submit" class="form-button login-button">Sing in</button>
+            <div class="switch-form">
+              <a href="#" id="showRegisterForm">Sign up</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="registerContainer" style="display:none;">
+        <div class="ring">
+          <i style="--clr:#ffffff;"></i>
+          <i style="--clr:#ff357a;"></i>
+          <i style="--clr:#ffffff;"></i>
+          <div class="auth-form">
+            <h2>Register</h2>
+            <div class="form-input">
+              <input type="text" placeholder="Username">
+            </div>
+            <div class="form-input">
+              <input type="password" placeholder="Password">
+            </div>
+            <div class="form-input">
+              <input type="email" placeholder="Email">
+            </div>
+            <div class="form-input">
+              <input type="submit" value="Sign up">
+            </div>
+            <div class="switch-form">
+              <a href="#" id="showLoginForm">Sign in</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<script src="../static/regiter.js"></script>
+</body>
+
+</html>

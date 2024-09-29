@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о пользователе</title>
+    <link rel="stylesheet" href="../static/styleinfo.css"> <!-- Убедитесь, что путь к CSS корректный -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="assign-group-section" style="display: none;" data-glow>
+    <h2 class="section-header">Назначение группы</h2>
+    <form class="assign-group-form">
+        <div class="form-field">
+            <label for="user-id">ID пользователя:</label>
+            <input type="number" id="user-id" name="user-id" required>
+        </div>
+        <div class="form-field">
+            <label for="group-name">Группа:</label>
+            <select id="group-name" name="group-name">
+                <option value="Разработчик">Разработчик</option>
+                <option value="Пользователь">Пользователь</option>
+                <option value="Посетитель">Посетитель</option>
+            </select>
+        </div>
+        <button type="submit" class="submit-btn">Назначить группу</button>
+    </form>
+</div>
+<div class="container">
+    <div class="user-info-section">
+        <h2 class="section-header">Информация о пользователе</h2>
+        <div class="user-info" data-glow>
+            <p><strong>Имя:</strong> {{ username }}</p>
+        <p><strong>Почта:</strong> {{ email }}</p>
+        <p><strong>Группа:</strong> {{ group_name }}</p>
+        </div>
+    </div>
+
+            {% if group_name == 'Разработчик' or group_name == 'Пользователь' %}
+<div class="settings-link">
+    <a href="/settings" class="submit-btn">Настройки парсера</a>
+</div>
+
+{% endif %}
+    <div></div>
+    {% if group_name == 'Разработчик' %}
+<div class="users-list-button">
+    <button id="showUsersList" class="submit-btn">Показать список пользователей</button>
+</div>
+{% endif %}
+        </form>
+    </div>
+
+
+</div>
+
+
+<script src="../static/userinfo.js"></script>
+</body>
+</html>
