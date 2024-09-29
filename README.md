@@ -19,7 +19,7 @@
 1. Клонируйте репозиторий:
    ```
    git clone https://github.com/moontify/MegamarketParser.git
-   cd python-parser
+   cd MegamarketParser
    ```
 
 2. Установите зависимости:
