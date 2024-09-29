@@ -3,6 +3,15 @@
 
 ## Версия Python 3.10
 
+## Внешний Вид
+Поле для логина
+<img src="https://github.com/user-attachments/assets/36220fe9-0f22-4caa-bd95-84a0bb3c42d8" width="500">
+
+Парсер
+<img src="https://github.com/user-attachments/assets/d8091ce5-8fd6-41de-b4fc-bb0c6bf57c92" width="800">
+
+
+
 ## Установка
 
 Следуйте этим шагам для установки парсера:
