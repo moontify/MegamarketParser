@@ -27,7 +27,12 @@
    pip install -r requirements.txt
    ```
 
-3. Запустите приложение:
+3. Установите chromedriver по ссылке ниже:
+   
+   https://chromedriver.chromium.org/downloads
+
+
+4. Запустите приложение:
    ```
    python app.py
    ```
